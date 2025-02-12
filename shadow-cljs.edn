@@ -1,0 +1,11 @@
+{:deps true
+ :builds {:app
+          {:target :react-native
+           :init-fn app.core/init
+           :expo/root-ns app
+           :output-dir "out"
+           :compiler-options {:source-map-path "out/"
+                              :source-map-include-sources-content true
+                              :warnings-as-errors true}
+           :devtools {:preloads [uix.preload preload]
+                      :build-notify preload/build-notify}}}}
