@@ -6,7 +6,7 @@
             [app.tabs.index]
             [app.tabs.explore]))
 
-(defui root []
+(defui ^:export root []
   (js/console.log "TABS LAYOUT")
   ($ r/Tabs
      {:screenOptions #js {:headerShown false}}

@@ -4,6 +4,6 @@
             [react-native :as rn]
             [uix.core :as uix :refer [$ defui]]))
 
-(defui root []
+(defui ^:export root []
   (js/console.log "NOT FOUND")
   ($ r/Stack.Screen {:options #js {:title "Ooops!"}}))

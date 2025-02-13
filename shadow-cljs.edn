@@ -1,8 +1,7 @@
 {:deps true
  :builds {:app
-          {:target :react-native
-           :init-fn app.core/init
-           :expo/root-ns app
+          {:target :expo-router
+           :root-ns app.layout
            :output-dir "out"
            :compiler-options {:source-map-path "out/"
                               :source-map-include-sources-content true

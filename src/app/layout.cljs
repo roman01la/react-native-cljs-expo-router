@@ -6,7 +6,7 @@
             [app.not-found]
             [app.tabs.layout]))
 
-(defui root []
+(defui ^:export root []
   (js/console.log "MAIN LAYOUT")
   ($ :<>
      ($ StatusBar {:style "auto"})

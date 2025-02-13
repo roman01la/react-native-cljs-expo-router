@@ -4,7 +4,7 @@
             [react-native :as rn]
             [uix.core :as uix :refer [$ defui]]))
 
-(defui root []
+(defui ^:export root []
   (js/console.log "TAB EXPLORE")
   ($ rn/View {:style {:flex 1
                       :justify-content :center
